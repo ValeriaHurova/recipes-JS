@@ -1,0 +1,98 @@
+body{
+    background-image: url(fon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+    ;
+    
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 65px;
+    font-family: 'Grandstander', cursive;
+    color: rgb(105, 8, 68);
+    background-color: rgba(235, 237, 243, 0.486);
+}
+
+h2{
+    font-size: 45px; 
+    font-family: 'Grandstander', cursive;
+    background-color: rgba(221, 212, 212, 0.5);
+    color: rgb(15, 88, 21);
+    
+}
+
+.input{
+    display: flex;
+   justify-content: center;
+}
+
+input{
+    flex:0.5;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Grandstander', cursive;
+
+}
+
+.item{
+    background-color: white;
+    width: 350px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 35px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.recipes{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Grandstander', cursive;
+
+}
+
+@media all and (max-width: 500px){
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    #input{
+        font-size: 13px;
+    }
+
+    input{
+        flex:1;
+    }
+}
+@media all and (max-width: 300px){
+    .item{
+        width: 250px;
+        height: 400px;
+    }
+
+    img{
+        width: 200px;
+        height: 350px;
+    }
+}
